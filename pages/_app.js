@@ -8,7 +8,7 @@ function App({ Component, pageProps }) {
 
 	useEffect(() => {
 		const handleRouteChange = (url) => {
-			window.gtag("config", process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+			window.gtag("config", process.env.GOOGLE_ANALYTICS, {
 				page_path: url,
 			});
 		};
@@ -30,7 +30,7 @@ function App({ Component, pageProps }) {
 				enableDeclineButton="true"
 				declineButtonText="No, no utilizar cookies">
 				Poner aquí el mensaje sobre el uso de cookies
-				<a href="#enlace_hacia_politica_de_cookies">Política de Cookies</a>.
+				<a href="#enlace_hacia_politica_de_cookies"> Política de Cookies</a>.
 			</CookieConsent>
 		</>
 	);
